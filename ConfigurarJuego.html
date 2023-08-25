@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="imgs/logo.png" alt="error al cargar la página">
+            <ul>
+                <li><a href="ConfigurarJuego.html">Jugar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="imgs/configuracion.png" alt="">
+
+        <form class="form-configuracion" action="pregunta.html" method="POST">
+            <div class="form__label">
+                <label for="nombre">Nombre</label>
+                <input type="text" autocomplete="off" name="nombre" required>
+            </div>
+            
+            <div>
+                
+                <select id="floatingSelectGrid" aria-label="Elegir dificultad" required>
+                    <option selected="TRUE" disabled="true">Dificultad:</option>
+                    <option value="1">Facil</option>
+                    <option value="2">Medio</option>
+                    <option value="3">Dificil</option>
+                    <option value="-1">Todos</option>
+                </select>
+            </div>
+            <div>
+                <select id="floatingSelectGrid" aria-label="Elegir dificultad" required>
+                    <option selected="true" disabled="true">Categoria:</option>
+                    <option value="1">Deporte</option>
+                    <option value="2">Cine</option>
+                    <option value="3">Musica</option>
+                    <option value="4">Ciencia</option>
+                    <option value="5">Arte</option>
+                    <option value="-1">Todas</option>
+                </select>
+            </div>
+        
+            <div class="form__div-submit">
+                <input class="submit" id="comenzar" type="submit" value="Comenzar">
+                <input class="submit" id="rehacer" type="reset" value="Rehacer">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <img src="imgs/Logo-Etermax.png" alt="">
+        <div>
+            <a href="https://www.instagram.com/etermax/" target="_blank"><img src="imgs/insta (1).png" alt=""></a>
+            <a href="https://www.facebook.com/etermax/?locale=es_LA" target="_blank"><img src="imgs/facebook (1).png" alt=""></a>
+            <a href="https://twitter.com/etermax" target="_blank"><img src="imgs/twitter (1).png" alt=""></a>
+        </div>
+    </footer>
+
+</body>
+</html>
